@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vertical Menu</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+  .menu-background {
+    background: url('background-pattern.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  .menu {
+    padding: 20px;
+  }
+  .menu h2 {
+    margin-bottom: 30px;
+  }
+  .menu ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .menu ul li {
+    margin-bottom: 15px;
+  }
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .menu ul li a:hover {
+    text-decoration: underline;
+  }
+  .close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    text-align: right;
+  }
+  .social-icons {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .social-icons li a {
+    color: #fff;
+    font-size: 20px;
+  }
+</style>
+</head>
+<body >
+
+<div class="container-fluid menu-background">
+  <div class="menu">
+    <div class="close-btn">×</div>
+    <h2>REACH GROUP</h2>
+    <ul class="nav flex-column">
+      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+        <div class="dropdown-menu bg-transparent border-0">
+          <a href="#" class="dropdown-item">Subsidiaries</a>
+          <a href="#" class="dropdown-item">REACH Digital Services</a>
+          <a href="#" class="dropdown-item">REACH Employment</a>
+          <a href="#" class="dropdown-item">REACH BPO</a>
+          <a href="#" class="dropdown-item">REACH Energy</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link">Recent News Center-Services</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+    </ul>
+    <ul class="social-icons">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Font Awesome for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
