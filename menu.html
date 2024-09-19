@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Menu Button</title>
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .menu-button {
+            width: 60px;
+            height: 60px;
+            background-color: #e63946;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .menu-button div {
+            width: 20px;
+            height: 2px;
+            background-color: #fff;
+            position: relative;
+        }
+        .menu-button div::before,
+        .menu-button div::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 2px;
+            background-color: #fff;
+            left: 6px;
+        }
+        .menu-button div::before {
+            top: -6px;
+        }
+        .menu-button div::after {
+            bottom: -6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-button">
+        <div></div>
+    </div>
+</body>
+</html>
